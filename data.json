@@ -1,5 +1,5 @@
 {
-    "mensData" : [
+    "data" : [
         {
             "id": 1,
             "Image" : "https://cdna.lystit.com/200/250/tr/photos/scottsme…o-boss-blue-3-pack-Logo-Short-Sleeve-T-shirt.jpeg",
@@ -7,7 +7,8 @@
             "details" : "3-pack Logo Short Sleeve T-shirt - Multicolor",
             "price" : 49,
             "offPrice" : 32,
-            "off": "35% off"
+            "off": "35% off",
+            "gender": "man"
         },
         {
             "id": 2,
@@ -16,7 +17,8 @@
             "details" : "Regular Fit Logo Crew Neck - White",
             "price" : 62,
             "offPrice" : 19,
-            "off" : "65% off"
+            "off" : "65% off",
+            "gender": "man"
         },
         {
             "id": 3,
@@ -25,7 +27,8 @@
             "details" : "Maine3 Jeans - Blue",
             "price" :178,
             "offPrice" : 25,
-            "off": "85% off"
+            "off": "85% off",
+            "gender": "man"
         },
         {
             "id": 4,
@@ -34,7 +37,8 @@
             "details" : "Play T-shirt With Heart Logo Patch - White",
             "price" : 95,
             "offPrice" : 81,
-            "off":"15% off"
+            "off":"15% off",
+            "gender": "man"
         },
         {
             "id": 5,
@@ -43,7 +47,8 @@
             "details" : "Sportswear Tech Pack Windrunner Full-zip Hoodie (black) - Clearance Sale",
             "price" : 126,
             "offPrice" : 126, 
-            "off":"0% off"
+            "off":"0% off",
+            "gender": "man"
         },
         {
             "id": 6,
@@ -52,7 +57,8 @@
             "details" : "T-shirt With Medusa Logo - Black",
             "price" : 78,
             "offPrice" : 59,
-            "off":"25% off"
+            "off":"25% off",
+            "gender": "man"
         },
         {
             "id": 7,
@@ -61,7 +67,8 @@
             "details" : "Logo-print Short-sleeve T-shirt - Black",
             "price" : 87,
             "offPrice" : 87,
-            "off": "0% off"
+            "off": "0% off",
+            "gender": "man"
         },
         {
             "id": 8,
@@ -70,7 +77,8 @@
             "details" : "Chest Logo T-shirt - White",
             "price" : 37,
             "offPrice" : 28,
-            "off":"20% off"
+            "off":"20% off",
+            "gender": "man"
         },
         {
             "id": 9,
@@ -79,7 +87,8 @@
             "details" : "Pack Of Three Cotton T-shirts - Multicolor",
             "price" : 281,
             "offPrice" : 281,
-            "off": "0% off"
+            "off": "0% off",
+            "gender": "man"
         },
         {
             "id": 10,
@@ -88,7 +97,8 @@
             "details" : "Patchwork-detail Denim Jeans - Blue",
             "price" : 1268.97,
             "offPrice" : 761,
-            "off": "40% off"
+            "off": "40% off",
+            "gender": "man"
         },
         {
             "id": 11,
@@ -97,7 +107,8 @@
             "details" : "Bear Hoodie - Black",
             "price" : 726,
             "offPrice" : 618,
-            "off": "15% off"
+            "off": "15% off",
+            "gender": "man"
         },
         {
             "id": 12,
@@ -106,7 +117,8 @@
             "details" : "Tech Fleece Full Zip Hoodie - Gra",
             "price" : 126,
             "offPrice" : 126,
-            "off": "0% off"
+            "off": "0% off",
+            "gender": "man"
         },
         {
             "id": 13,
@@ -115,7 +127,8 @@
             "details" : "Lodge Hoody-r Padded Jacket - Black",
             "price" : 620,
             "offPrice" : 409,
-            "off": "35% off"
+            "off": "35% off",
+            "gender": "man"
         },
         {
             "id": 14,
@@ -124,7 +137,8 @@
             "details" : "Embroidered Logo Polo Shirt - White",
             "price" : 107,
             "offPrice" : 60,
-            "off": "40% off"
+            "off": "40% off",
+            "gender": "man"
         },
         {
             "id": 15,
@@ -133,7 +147,8 @@
             "details" : "Corp Stripe T-shirt - Black",
             "price" : 52,
             "offPrice" :26, 
-            "off": "50% 0ff"
+            "off": "50% 0ff",
+            "gender": "man"
         },
         {
             "id": 16,
@@ -142,7 +157,8 @@
             "details" : "Rovic Zip 3d Straight Tapered Cargos - Black",
             "price" : 110,
             "offPrice" : 88,
-            "off": "20% off"
+            "off": "20% off",
+            "gender": "man"
         },
         {
             "id": 17,
@@ -151,7 +167,8 @@
             "details" : "Bear Graphic T-shirt - Black",
             "price" : 265,
             "offPrice" : 265, 
-            "off": "0% off"
+            "off": "0% off",
+            "gender": "man"
         },
         {
             "id": 18,
@@ -160,7 +177,8 @@
             "details" : "Drop Needle Monogram Bomber - Blue",
             "price" : 1269,
             "offPrice" : 1269,
-            "off": "0% off"
+            "off": "0% off",
+            "gender": "man"
         },
         {
             "id": 19,
@@ -169,7 +187,8 @@
             "details" : "2 Pack Lounge Crew T-shirts - Blue",
             "price" : 65,
             "offPrice" : 52, 
-            "off": "20% off"
+            "off": "20% off",
+            "gender": "man"
         },
         {
             "id": 20,
@@ -178,192 +197,209 @@
             "details" : "Classic Pique Polo Shirt - Natural",
             "price" : 99,
             "offPrice" : 50, 
-            "off": "45% off"
-        }
-    ],
+            "off": "45% off",
+            "gender": "man"
+        },
 
-
-
-"womensData" : [
         {
-            "id": 1,
+            "id": 21,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/24sevres/19eec3dc/fendi-noir-Lycra-Bikini.jpeg",
             "title" : "FENDI",
             "details" : "Lycra® Bikini - Black",
             "price" : 401,
             "offprice" : 401,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 2,
+            "id": 22,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/f127a618/nasty-gal-designer-champagne-Cowl-Back-Satin-Wrap-Maxi-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Cowl Back Satin Wrap Maxi Dress - Multicolor",
             "price" : 104,
             "offprice" : 73,
-            "off" : "30% off"
+            "off" : "30% off",
+            "gender": "woman"
         },
         {
-            "id": 3,
+            "id": 23,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/9b5a2cab/nasty-gal-designer-white-Floral-V-Neck-High-Low-Midi-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Playing For Flower Floral Midi Dress - White",
             "price" : 63,
             "offprice" : 26,
-            "off" : "55% off"
+            "off" : "55% off",
+            "gender": "woman"
         },
         {
-            "id": 4,
+            "id": 24,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/mytheresa/b880c102/balenciaga-white-T-shirt-in-cotone-con-logo.jpeg",
             "title" : "BALENCIAGA",
             "details" : "Logo Cotton-jersey T-shirt - White",
             "price" : 322,
             "offprice" : 163,
-            "off" : "45% off"
+            "off" : "45% off",
+            "gender": "woman"
         },
         {
-            "id": 5,
+            "id": 25,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/b7f02410/nasty-gal-designer-beige-Sequin-Embellished-Strappy-Tulle-Maxi-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Sequin Embellished Strappy Tulle Maxi Dress - Natural",
             "price" : 368,
             "offprice" : 258,
-            "off" : "30% off"
+            "off" : "30% off",
+            "gender": "woman"
         },
         {
-            "id": 6,
+            "id": 26,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/24sevres/2531d9c3/fendi-noir-Lycra-Swimsuit.jpeg",
             "title" : "FENDI",
             "details" : "Lycra® Swimsuit - Black",
             "price" : 433,
             "offprice" : 433,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 7,
+            "id": 27,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/ssense/b2e5fa72/skims-Onyx-Soft-Lounge-Slip-Dress.jpeg",
             "title" : "SKIMS",
             "details" : "Soft Lounge Slip Dress - Black",
             "price" : 111,
             "offprice" : 111,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 8,
+            "id": 28,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/a3586e8c/nasty-gal-designer-blue-Floral-Jacquard-Balloon-Sleeve-Skater-Mini-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Floral Jacquard Balloon Sleeve Skater Mini Dress - Blue",
             "price" : 73,
             "offprice" : 51,
-            "off" : "30%"
+            "off" : "30%",
+            "gender": "woman"
         },
         {
-            "id": 9,
+            "id": 29,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/8ac9632e/nasty-gal-designer-pink-Midi-Shirt-Dress-In-Print.jpeg",
             "title" : "NASTY GAL",
             "details" : "Midi Shirt Dress In Print - Pink",
             "price" : 68,
             "offprice" : 16,
-            "off" : "75% off"
+            "off" : "75% off",
+            "gender": "woman"
         },
         {
-            "id": 10,
+            "id": 30,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/shopbop/e1584d59/for-love-and-lemons-White-Emerie-Cutout-Dress.jpeg",
             "title" : "FOR LOVE & LEMONS",
             "details" : "Emerie Cutout Dress - White",
             "price" : 268,
             "offprice" : 268,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 11,
+            "id": 31,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/theoutnet/42ca2758/acne-Fliederfarben-Beaded-crepe-maxi-dress.jpeg",
             "title" : "ACNE STUDIOS",
             "details" : "Beaded Crepe Maxi Dress - Purple",
             "price" : 1086,
             "offprice" : 298,
-            "off" : "85% off"
+            "off" : "85% off",
+            "gender": "woman"
         },
         {
-            "id": 12,
+            "id": 32,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/thehut/560e7746/calvin-klein-White-Monogram-Logo-Regular-Fit-T-shirt.jpeg",
             "title" : "CALVIN KLEIN",
             "details" : "Logo-print Stretch-cotton T-shirt - White",
             "price" : 57,
             "offprice" : 23,
-            "off" : "60% off"
+            "off" : "60% off",
+            "gender": "woman"
         },
         {
-            "id": 13,
+            "id": 33,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/eraldo/3f845a1d/nike-Black-Air-Cupped-Long-sleeve-Mini-Dress.jpeg",
             "title" : "NIKE",
             "details" : "Air Cupped Long-sleeve Mini Dress - Black",
             "price" : 73,
             "offprice" : 73,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 14,
+            "id": 34,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/mytheresa/2789553d/max-mara-green-Carter-Cotton-And-Silk-Organza-Maxi-Dress.jpeg",
             "title" : "MAX MARA",
             "details" : "Carter Cotton And Silk Organza Maxi Dress - Green",
             "price" : 400,
             "offprice" : 400,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 15,
+            "id": 35,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/jarlolondon/edafea09/jarlo-Powder-Blue-Allegra-Sheer-Floral-Embroidery-Maxi-Dress-With-Deep-V-Front-Back-Neckline.jpeg",
             "title" : "JARLO",
             "details" : "Allegra Sheer Floral Embroidery Maxi Dress With Deep V Front & Back Neckline - Blue",
             "price" : 176,
             "offprice" : 176,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 16,
+            "id": 36,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/3e072fc6/nasty-gal-designer-orange-Sheer-Sleeve-Maxi-Slit-Wrap-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Sheer Sleeve Maxi Slit Wrap Dress - Orange",
             "price" : 89,
             "offprice" :30 ,
-            "off" : "65% off"
+            "off" : "65% off",
+            "gender": "woman"
         },
         {
-            "id": 17,
+            "id": 37,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/cettire/de080468/versace-Black-Medusa-Band-V-neck-Bra.jpeg",
             "title" : "VERSACE",
             "details" : "Medusa Band V-neck Bra - Black",
             "price" : 79,
             "offprice" : 79,
-            "off" : "0% off"
+            "off" : "0% off",
+            "gender": "woman"
         },
         {
-            "id": 18,
+            "id": 38,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/284fc273/nasty-gal-designer-sage-Satin-Floral-Print-Long-Sleeve-Maxi-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Satin Floral Print Long Sleeve Maxi Dress - Green",
             "price" : 97,
             "offprice" : 68,
-            "off" : "30% off"
+            "off" : "30% off",
+            "gender": "woman"
         },
         {
-            "id": 19,
+            "id": 39,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/nastygal/6756dac4/nasty-gal-designer-olive-Sequin-Split-Front-Midi-Tea-Dress.jpeg",
             "title" : "NASTY GAL",
             "details" : "Sequin Split Front Midi Tea Dress - Green",
             "price" : 119,
             "offprice" : 47,
-            "off" : "60% off"
+            "off" : "60% off",
+            "gender": "woman"
         },
         {
-            "id": 20,
+            "id": 40,
             "image" : "https://cdna.lystit.com/200/250/tr/photos/saksoff5th/1fa6f982/karl-lagerfeld-Black-Black-Tie-Graphic-T-shirt.jpeg",
             "title" : "KARL LAGERFELD",
             "details" : "Black Tie Graphic T-shirt - Black",
             "price" : 39,
             "offprice" : 30,
-            "off" : "20% off"
+            "off" : "20% off",
+            "gender": "woman"
         }
     ]
 }
