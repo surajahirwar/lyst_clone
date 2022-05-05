@@ -1,0 +1,91 @@
+ 
+   .mainbox{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 15px;
+}
+.leftbox{
+   width: 65%;
+}
+#email{
+   width: 99%;
+   height: 35px;
+}
+#first{
+    width: 47%;
+    height: 35px;
+    margin-right: 29.5px;
+}
+#last{
+    width: 47%;
+    height: 35px;
+}
+#address{
+ width: 99%;
+ height: 35px;
+}
+#address2{
+ width: 47%;
+ height: 35px;
+ margin-right: 29.5px;
+}
+ #postalcode{
+ width: 47%;
+ height: 35px;
+ } 
+ #city{
+     width: 47%;
+     height: 35px;
+     margin-right: 29.5px;
+  }
+     #region{
+     width: 47%;
+     height: 35px;
+     } 
+     #phone{
+         width: 47%;
+         height: 35px;
+         margin-right: 29.5px;
+        }
+         #location{
+         width: 47%;
+         height: 35px;
+         } 
+       #btn{
+         margin-left: 5%;
+         margin-right: 5%;
+         text-align: center;
+         color: white;
+         width: 90%;
+         height: 40px;
+         background-color: black; 
+         cursor: pointer;
+       }
+
+
+.rightbox{
+   width: 32%;
+   background-color: beige;
+}
+.rightbox h2{
+   margin-left: 5%;
+   margin-right: 5%;
+}
+#button{
+   margin-left: 5%;
+   margin-right: 5%;
+   text-align: center;
+   color: white;
+   width: 90%;
+   height: 40px;
+   background-color: black;
+   cursor: pointer; 
+}
+#cart{
+   margin-left: 5%;
+   margin-right: 5%;
+   display: flex;
+   justify-content: space-between;
+}
