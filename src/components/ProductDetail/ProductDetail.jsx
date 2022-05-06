@@ -1,3 +1,7 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 import {
   Button,
   Main,
@@ -5,16 +9,24 @@ import {
 } from "../../Style/ProductDetail/ProductDetail";
 
 export default function ProductDetail() {
-  const data = {
-    id: 1,
-    Image:
-      "https://cdna.lystit.com/200/250/tr/photos/thehut/dbcff7e3/lacoste-White-Pima-T-shirt.jpeg",
-    title: "BOSS BY HUGO BOSS",
-    details: "3-pack Logo Short Sleeve T-shirt - Multicolor",
-    price: 49,
-    offPrice: 32,
-    off: "35% off",
-  };
+  const { id } = useParams();
+  const [data, setData] = useState({});
+  //   const data = {
+  //     id: 1,
+  //     Image:
+  //       "https://cdna.lystit.com/200/250/tr/photos/thehut/dbcff7e3/lacoste-White-Pima-T-shirt.jpeg",
+  //     title: "BOSS BY HUGO BOSS",
+  //     details: "3-pack Logo Short Sleeve T-shirt - Multicolor",
+  //     price: 49,
+  //     offPrice: 32,
+  //     off: "35% off",
+  //   };
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/data/${id}`).then((res) => {
+      setData(res.data);
+    });
+  }, []);
 
   return (
     <Main>
@@ -38,14 +50,14 @@ export default function ProductDetail() {
         <Button>ADD TO SHOPPING BAG </Button>
         <Wishlist>ADD TO WISHLIST</Wishlist>
 
-        <select name="" id="">
-          <div className="relative">
+        {/* <select name="" id="">
+          <option className="relative">
             All orders are shipped worldwide via our affiliate courier DHL.
             Please see the shipping method as well as shipping costs and
             delivery times for your destination here. We gladly accept returns
             within 30 days of receipt free of charge.
-          </div>
-        </select>
+          </option> */}
+        {/* </select> */}
 
         <p>More questions about this item?</p>
         <p>See more Zimmermann</p>
