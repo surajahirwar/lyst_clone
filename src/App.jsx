@@ -4,7 +4,7 @@ import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage/HomePage";
+import { Home } from "./components/HomePage/HomePage";
 import ProductPage from "./components/ProductPage/ProductPage";
 import Login from "./components/Login/Login";
 import CartPage from "./components/CartPage/CartPage";
@@ -14,8 +14,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/login" element={<Login />} />
