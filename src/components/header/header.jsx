@@ -3,6 +3,7 @@ import {React, useState} from "react"
 import "./header.css"
 import data from "../../Data.json";
 import { Bottom_header } from "./Bottom_header"
+import { Link } from "react-router-dom";
 
 export const Header = () =>{
 
@@ -32,7 +33,13 @@ export const Header = () =>{
                 <span>GD - US$</span>
                 <span>Help <img src="https://raw.githubusercontent.com/surajahirwar/surajahirwar/main/down-arrow.png" /></span>
                 <span>Sing in</span>
+                <Link to="/">
                 <button>Join</button>
+                </Link>
+                <Link to="/cart">
+                 <button>Cart</button>
+                    </Link>
+
     
             </div>
         </div>
