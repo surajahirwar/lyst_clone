@@ -1,6 +1,6 @@
 import React from "react"
 import "./HomePage.css"
-// import { Footer } from "../footer/footer"
+ import { Footer } from "../footer/footer"
 export const Home = () => {
     // const data={
     //     image:"https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png"
@@ -109,7 +109,7 @@ Lyst members are notified when an item goes on sale.</h6>
   </div>
     <div id="signupdiv">
     <h3 id="h3el">SIGN UP FOR<br></br>   BETTER<br></br> SHOPPING</h3>
-    <button id="btn" type="submit"> signup -></button>
+    <button id="btn" type="submit"> signup </button>
     </div>
     
 </div>
