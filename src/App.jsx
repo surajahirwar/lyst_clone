@@ -1,4 +1,5 @@
-
+ import { useState } from 'react'
+import "./App.css";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
@@ -12,15 +13,11 @@ import { Paymentdetails } from "./components/PaymentPage/paymentDetails";
 
 
 function App() {
-
-
-
   return (
     <div className="App">
       <Header />
 
       <Routes>
-        
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
@@ -31,10 +28,10 @@ function App() {
       </Routes>
 
       <h1>hello there</h1>
-     
+
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

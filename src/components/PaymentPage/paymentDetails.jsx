@@ -1,7 +1,7 @@
 import  "./paymentDetails.css";
-
+  import { useSelector } from "react-redux";
 export const Paymentdetails = ()=>{
-
+        //  const Price = useSelector((e)=>e.price);
      return(
          <div className="mainbox">
            <div className="leftbox">

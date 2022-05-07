@@ -1,26 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
 
 import {
   Button,
   Main,
   Wishlist,
 } from "../../Style/ProductDetail/ProductDetail";
+import { addToCart } from "../../Redux/Cart/cartAction";
 
 export default function ProductDetail() {
   const { id } = useParams();
   const [data, setData] = useState({});
-  //   const data = {
-  //     id: 1,
-  //     Image:
-  //       "https://cdna.lystit.com/200/250/tr/photos/thehut/dbcff7e3/lacoste-White-Pima-T-shirt.jpeg",
-  //     title: "BOSS BY HUGO BOSS",
-  //     details: "3-pack Logo Short Sleeve T-shirt - Multicolor",
-  //     price: 49,
-  //     offPrice: 32,
-  //     off: "35% off",
-  //   };
+  const [size, setSize] = useState();
 
   useEffect(() => {
     axios.get(`http://localhost:8080/data/${id}`).then((res) => {
@@ -28,8 +22,17 @@ export default function ProductDetail() {
     });
   }, []);
 
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(addToCart({ ...data, size, itemId: uuidv4() }));
+  };
+
   return (
     <Main>
+      {/* <Link to="/cart">
+        <button>Cart</button>
+      </Link> */}
       <img src={data.Image} alt="" />
       <div>
         <h2>{data.title}</h2>
@@ -37,17 +40,21 @@ export default function ProductDetail() {
         <h4>{`€ ${data.price}`}</h4>
         <p>VAT exception. VAT not included. </p>
         <p>item no. P00624438</p>
-        <select name="" id="sizeOption">
+        <select
+          name=""
+          id="sizeOption"
+          onChange={(e) => setSize(e.target.value)}
+        >
           <option value="">Choose your Size</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
         </select>
         <p> Open Size Chart</p>
-        <Button>ADD TO SHOPPING BAG </Button>
+        <Button onClick={handleClick}>ADD TO SHOPPING BAG </Button>
         <Wishlist>ADD TO WISHLIST</Wishlist>
 
         {/* <select name="" id="">
