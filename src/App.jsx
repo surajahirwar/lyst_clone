@@ -1,6 +1,5 @@
 // import { useState } from 'react'
 import "./App.css";
-// import { Notes } from "./components/fetchdata";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
@@ -8,7 +7,6 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import ProductPage from "./components/ProductPage/ProductPage";
 import Login from "./components/Login/Login";
-// import PaymentPage from "./components/PaymentPage/PaymentPage";
 import CartPage from "./components/CartPage/CartPage";
 import { Paymentdetails } from "./components/PaymentPage/paymentDetails";
 
