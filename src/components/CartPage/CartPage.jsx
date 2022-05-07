@@ -1,34 +1,43 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteCart } from "../../Redux/Cart/cartAction";
 import {
   Cart,
   ContactDiv,
   Div,
+  Item,
   NavDiv,
   ProdDiv,
 } from "../../Style/CartPage/CartPage";
 
 export default function CartPage() {
-  const store = useSelector((store) => store);
+  const store = useSelector((store) => store.cart);
 
-  console.log("store", store);
+  const dispatch = useDispatch();
+
+  const handleRemove = (data) => {
+    dispatch(deleteCart(data));
+  };
+
   return (
     <Cart>
-      <div></div>
+      <div>
+        <h2>YOUR SHOPPING BAG </h2>
+      </div>
       <ProdDiv>
         {store.map((e) => {
           return (
-            <div>
-              <div>
+            <>
+              <Item key={e.id}>
                 <img src={e.Image} alt="" />
                 <div>
                   <h2>{e.title}</h2>
                   <h4>{e.details}</h4>
                   <h4>Size: {e.size}</h4>
-                  <button>Remove</button>
+                  <button onClick={() => handleRemove(e)}>Remove</button>
                   <button>Add to Wishlist</button>
                 </div>
-              </div>
-            </div>
+              </Item>
+            </>
           );
         })}
       </ProdDiv>

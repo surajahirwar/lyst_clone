@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
 
 import {
   Button,
@@ -24,7 +25,7 @@ export default function ProductDetail() {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(addToCart({ ...data, size }));
+    dispatch(addToCart({ ...data, size, itemId: uuidv4() }));
   };
 
   return (

@@ -15,7 +15,24 @@ export const ContactDiv = styled.div`
   }
 `;
 export const ProdDiv = styled.div`
+  /* display: flex; */
+`;
+
+export const Item = styled.div`
   display: flex;
+  margin-bottom: 50px;
+
+  div {
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    margin-right: 30px;
+  }
 `;
 
 export const NavDiv = styled.div`
