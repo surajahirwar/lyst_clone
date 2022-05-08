@@ -30,7 +30,9 @@ export const Header = () => {
             Help{" "}
             <img src="https://raw.githubusercontent.com/surajahirwar/surajahirwar/main/down-arrow.png" />
           </span>
-          <span>Sign in</span>
+          <Link className="Link_remove" to={"/login"}>
+          <span className="remove_line">Sign in</span>
+          </Link>
           <Link to="/">
             <button>Join</button>
           </Link>
@@ -59,7 +61,7 @@ export const Header = () => {
               setModalOpen(!modalOpen);
             }}
           >
-            <Link to="/product/men"> MEN</Link>
+            <Link className="Link_remove" to="/product/men"> MEN</Link>
           </span>
           <div className="header_bottom_search">
             <i className="fa fa-search" aria-hidden="true"></i>

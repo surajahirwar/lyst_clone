@@ -1,14 +1,14 @@
 import React from "react"
 import "./HomePage.css"
 import { Link } from "react-router-dom";
- const Home = () => {
+export  const Home = () => {
     // const data={
     //     image:"https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png"
     // }
     return (
         <div>
             
-            <div class="imgbg" >
+            <div className="imgbg" >
           <img className="homeimg" src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt=""/>
            </div>
 
@@ -83,9 +83,9 @@ import { Link } from "react-router-dom";
 <div id="offzone" className="offzone">
     <div id="off_div">
         <div className="head3" id="bg_col"><h1 className="head3_h1">BREAKOUT <br></br>BRANDS</h1></div>
-        <Link to="men"><div className="head3"><h1 className="head3_h12">PATAO</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg" alt=""/></div></Link>
-        <Link to="men"><div className="head3"><h1 className="head3_h12">GUCCI</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg" alt=""/></div></Link>
-        <Link to="men"><div className="head3"><h1 className="head3_h12">SAINT LAURENT</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg" alt=""/></div></Link>
+        <Link className="Link_remove" to="men"><div className="head3"><h1 className="head3_h12">PATAO</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg" alt=""/></div></Link>
+        <Link className="Link_remove" to="men"><div className="head3"><h1 className="head3_h12">GUCCI</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg" alt=""/></div></Link>
+        <Link className="Link_remove" to="men"><div className="head3"><h1 className="head3_h12">SAINT LAURENT</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg" alt=""/></div></Link>
     </div>
     </div>
     
@@ -164,10 +164,10 @@ Lyst members are notified when an item goes on sale.</h6>
 <div className="menus2">
     <h1 className="head2">WOMEN'S CLOTHING</h1>
     <div className="menu-div2">
-       <Link to="mens"> <h5>Night Ware</h5></Link>
-       <Link to="mens"> <h5>Jackets</h5></Link>
-       <Link to="mens"><h5>Skirts</h5></Link>
-       <Link to="mens"> <h5>Skirts</h5></Link>
+       <Link className="Link_remove" to="mens"> <h5>Night Ware</h5></Link>
+       <Link className="Link_remove" to="mens"> <h5>Jackets</h5></Link>
+       <Link className="Link_remove" to="mens"><h5>Skirts</h5></Link>
+       <Link className="Link_remove" to="mens"> <h5>Skirts</h5></Link>
         <h5>Shoes</h5>
         <h5>Knitwear</h5>
         <h5>Pants</h5>
@@ -233,4 +233,4 @@ Lyst members are notified when an item goes on sale.</h6>
     )
 }
 
-export default Home;
+

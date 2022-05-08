@@ -22,7 +22,7 @@ export const Bottom_header = () => {
           <div className="inner_product">
             <ul>
               <li>
-                <Link to="/product/women">All Clothing</Link>{" "}
+                <Link className="Link_remove" to="/product/women">All Clothing</Link>{" "}
               </li>
               <li>Beachwear</li>
               <li>Coats</li>

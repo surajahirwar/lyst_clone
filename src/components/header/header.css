@@ -216,3 +216,9 @@ body{
     }
 
 }
+
+
+.Link_remove{
+    text-decoration: none;
+    color: black;
+}
