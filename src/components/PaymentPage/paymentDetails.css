@@ -9,6 +9,12 @@
 .leftbox{
    width: 65%;
 }
+.H{
+   text-align: left;
+   margin-left: 0px;
+   padding-left: 0%;
+}
+
 #email{
    width: 99%;
    height: 35px;
