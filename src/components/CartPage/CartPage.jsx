@@ -11,13 +11,11 @@ import {
 
 export default function CartPage() {
   const store = useSelector((store) => store.cart);
-
   const dispatch = useDispatch();
 
   const handleRemove = (data) => {
     dispatch(deleteCart(data));
   };
-
   return (
     <Cart>
       <div>
