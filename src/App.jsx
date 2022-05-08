@@ -12,7 +12,7 @@ import { Paymentdetails } from "./components/PaymentPage/paymentDetails";
 import { Welcome } from './components/PaymentPage/welcome';
 import { Women } from "./components/ProductPage/components/women";
 import { Mens } from "./components/ProductPage/components/men";
-
+import { Address } from "./components/PaymentPage/address";
 
 function App() {
   return (
@@ -20,12 +20,10 @@ function App() {
       <Header />
 
       <Routes>
-
-    <Route path="/" element={<HomePage />} />
-        <Route path="/women" element={<Women/>} />
-        <Route path="/men" element={<Mens/>}/>
-
-        
+        <Route path="/" element={<Home />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/men" element={<Mens />} />
+        <Route path="/address" element={<Address />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />

@@ -11,6 +11,7 @@ import {
   ItemDiv,
   NavDiv,
 } from "../../Style/CartPage/CartPage";
+import { Footer } from "../footer/footer";
 import { Price } from "../ProductPage/components/dropdown";
 
 export default function CartPage() {
@@ -104,6 +105,7 @@ export default function CartPage() {
           </div>
         </ContactDiv>
       </div>
+      <Footer />
     </Cart>
   );
 }
