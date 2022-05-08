@@ -119,6 +119,7 @@ body {
 }
 
 
+
 .head2{
     writing-mode: vertical-rl;
        font-size: 30px;     
@@ -130,6 +131,9 @@ body {
     /* padding-left: 20px; */
    text-align: center;
    /* border: 2px solid darkmagenta; */
+}
+#head2{
+   text-align: left; 
 }
 .head2:hover{
     color: #d97de3;
@@ -180,7 +184,7 @@ body {
     
     display: inline-block;
     height: 280px;
-    width: 29%;
+    width: 29.9%;
     padding-top: 224px;
     justify-content: left;
     padding-left: -120px;
@@ -249,7 +253,9 @@ width: 100%;
     display: inline-block;
 
     margin-left: 100px;
-    padding-top: 50px;
+    
+    margin-bottom: 50px;
+    justify-content: center;
 }
 .menu-div2{
     display: inline-block;
