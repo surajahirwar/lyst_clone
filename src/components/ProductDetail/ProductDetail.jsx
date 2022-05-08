@@ -25,11 +25,16 @@ export default function ProductDetail() {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(addToCart({ ...data, size, itemId: uuidv4() }));
+    if (!size) {
+      alert("please Select Size");
+    } else {
+      dispatch(addToCart({ ...data, size, itemId: uuidv4() }));
+      alert("Product added to the Cart");
+    }
   };
 
   return (
-    <Main>
+    <Main >
       {/* <Link to="/cart">
         <button>Cart</button>
       </Link> */}

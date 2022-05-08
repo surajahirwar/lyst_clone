@@ -46,10 +46,10 @@ export const Item = styled.div`
   display: flex;
   margin-bottom: 50px;
 
-  div {
+  /* div {
     margin-left: 80px;
     text-align: left;
-  }
+  } */
 
   button {
     width: 150px;
@@ -90,3 +90,4 @@ export const Div = styled.div`
   justify-content: space-between;
   text-align: right;
 `;
+

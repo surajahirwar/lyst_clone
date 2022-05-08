@@ -25,7 +25,7 @@ export default function CartPage() {
       <div>
         <h2>YOUR SHOPPING BAG </h2>
         <Checkout>
-          <Link to="/payment">
+          <Link to="/address">
             <button>PROCEED TO CHECKOUT</button>
           </Link>
           <div>
@@ -36,30 +36,35 @@ export default function CartPage() {
         </Checkout>
         <hr />
       </div>
-      <ItemDiv>
+      <div>
         {store.map((e) => {
           return (
-            <>
-              <Item key={e.id}>
+            <ItemDiv key={e.id}>
+              <Item>
                 <img src={e.Image} alt="" />
-                <div>
+                <div className="div">
                   <h2>{e.title}</h2>
                   <h4>{e.details}</h4>
                   <h4>Size: {e.size}</h4>
                   <button onClick={() => handleRemove(e)}>Remove</button>
                   <button>Add to Wishlist</button>
                 </div>
+                <div className="flex">
+                  <p>{e.price}</p>
+                  <p>1</p>
+                  <p>{e.price}</p>
+                </div>
               </Item>
-            </>
+            </ItemDiv>
           );
         })}
 
-        {/* <Price>
+        <Price>
           <p>Price</p>
           <p>Quantity</p>
           <p>Subtotal</p>
-        </Price> */}
-      </ItemDiv>
+        </Price>
+      </div>
       <p className="leftAlign">YOUR CURRENT PROMOTIONS</p>
       <p className="leftAlign">Free Shipping</p>
       <hr />
@@ -69,7 +74,7 @@ export default function CartPage() {
             type="text"
             placeholder="Gift Card/ Store Credit/ Promo Code"
           />
-          <button>USE CODE</button>
+          <button className="code">USE CODE</button>
         </div>
 
         <div>
@@ -80,7 +85,7 @@ export default function CartPage() {
       </Div>
       <NavDiv>
         <button>CONTINUE SHOPPING</button>
-        <Link to="/payment">
+        <Link to="/address">
           <button>PROCEED TO CHECKOUT</button>
         </Link>
       </NavDiv>
