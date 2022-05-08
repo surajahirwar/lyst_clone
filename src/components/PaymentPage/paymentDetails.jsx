@@ -1,4 +1,5 @@
 import  "./paymentDetails.css";
+import { Link } from "react-router-dom";
   import { useSelector } from "react-redux";
 export const Paymentdetails = ()=>{
           const Price = useSelector((store)=>store.cart);
@@ -33,11 +34,15 @@ export const Paymentdetails = ()=>{
               <label htmlFor="checkout">Save credit card</label><br /><br />
 
             </form>
-          <p id="btn">SAVE & CONTINUE </p> 
+            <Link to="/welcome">
+            <p id="btn">SAVE & CONTINUE </p> 
+           </Link>
           </div> 
           <div className="rightbox">
               <h2>Your Order</h2>
+               <Link to="/welcome">
                <p id="button">SAVE & CONTINUE</p>
+               </Link>
                <div id="cart">
                    <div className="left">
                     <p>Items</p>
