@@ -9,8 +9,9 @@ import Register from "./components/Register/Register";
 import CartPage from "./components/CartPage/CartPage";
 import { Home } from "./components/HomePage/HomePage";
 import { Paymentdetails } from "./components/PaymentPage/paymentDetails";
-import { Women } from "./components/ProductPage/components/women";
+import {Women} from "./components/ProductPage/components/women";
 import { Mens } from "./components/ProductPage/components/men";
+
 
 function App() {
   return (
@@ -18,8 +19,12 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Women" element={<Women />} />
+
+    <Route path="/" element={<HomePage />} />
+        <Route path="/women" element={<Women/>} />
+        <Route path="/men" element={<Mens/>}/>
+
+        
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
