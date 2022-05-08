@@ -1,6 +1,17 @@
 import "./address.css";
-
+import {Link} from "react-router-dom";
+import { useSelector } from "react-redux";
 export const Address = ()=>{
+    const Price = useSelector((store)=>store.cart);
+    console.log( "P", Price);
+      var sum=0;
+    for(let i=0; i<Price.length; i++){
+       sum  += Price[i].price;
+    }
+    var ship = 687;
+    var tax = 200;
+    var discount = (sum*10)/100;
+    var Total = sum + ship + tax - discount; 
 
      return(
          <div className="mainbox">
@@ -21,7 +32,9 @@ export const Address = ()=>{
               <input id="phone" type="number" placeholder="Phone" />
               <input id="location" type="text" placeholder="Location" /><br /><br />
           </form>
+          <Link to="/payment">
           <p id="btn">Continue</p> 
+          </Link>
           </div> 
           <div className="rightbox">
               <h2>Your Order</h2>
@@ -29,17 +42,17 @@ export const Address = ()=>{
                <div id="cart">
                    <div className="left">
                     <p>Items</p>
-                    <p>Shipping ?</p>
-                    <p>Duties & Taxes ?</p>
+                    <p>Shipping </p>
+                    <p>Duties & Taxes </p>
                     <p>Order Discount</p>
                     <h2>Total</h2>
                    </div>
                    <div className="right">
-                       <p>₹ 4,545</p>
-                       <p>₹ 6,87</p>
-                       <p>₹ 8,67</p>
-                       <p>-₹ 4,87</p>
-                       <h3>₹5,887</h3>
+                       <p>€ {sum}</p>
+                       <p>€ {ship}</p>
+                       <p>€ {tax}</p>
+                       <p>-€ {discount}</p>
+                       <h3>€ {Total}</h3>
                    </div>
                </div>
           </div>

@@ -46,17 +46,17 @@ export const Paymentdetails = ()=>{
                <div id="cart">
                    <div className="left">
                     <p>Items</p>
-                    <p>Shipping ?</p>
-                    <p>Duties & Taxes ?</p>
+                    <p>Shipping </p>
+                    <p>Duties & Taxes </p>
                     <p>Order Discount</p>
                     <h2>Total</h2>
                    </div>
                    <div className="right">
-                       <p>₹ {sum}</p>
-                       <p>₹ {ship}</p>
-                       <p>₹ {tax}</p>
-                       <p>-₹ {discount}</p>
-                       <h3>₹ {Total}</h3>
+                       <p>€ {sum}</p>
+                       <p>€ {ship}</p>
+                       <p>€ {tax}</p>
+                       <p>-€ {discount}</p>
+                       <h3>€ {Total}</h3>
                    </div>
                </div>
           </div>
