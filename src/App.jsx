@@ -10,6 +10,7 @@ import Register from "./components/Register/Register";
 import CartPage from "./components/CartPage/CartPage";
 import { Home } from './components/HomePage/HomePage';
 import { Paymentdetails } from "./components/PaymentPage/paymentDetails";
+import { Women } from "./components/ProductPage/components/women";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<ProductPage />} />
+        <Route path="/Women" element={<Women/>} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>}/>

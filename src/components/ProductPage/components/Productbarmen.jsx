@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import styledComponents from "styled-components";
-import { MensData } from "./data/menData";
 import {BsHeart} from "react-icons/bs"
+import axios from "axios";
 
 // import { Popup } from "./popup";
 
@@ -127,28 +127,39 @@ const Icondiv=styledComponents.div`
 
 
 export const ProductbarM=()=>{
-   const [product,setProduct]=useState();
-   const handleSort = (e)=>{
-     if(e.target.value==="highToLow"){
-        setData([...data].sort((a,b)=>b.offPrice-a.offPrice))
-     }
-     else if(e.target.value==="lowToHigh"){
-      setData([...data].sort((a,b)=>a.offPrice-b.offPrice))
-     }
-     else if(e.target.value==="no"){
-       setData(MensData)
-     }
-   }
+   const [data,setData]=useState([]);
+   const [filtered,setFiltered]=useState([])
    
-      
-   
+  useEffect(() => {
+     axios.get(`http://localhost:8080/data`).then((res)=>setData(res.data))
+  
+
+  }, []);
+   useEffect(()=>{
+     const result = data.filter((obj)=>{
+       return obj.gender==="man";
+     });
+     setFiltered(result);
+   },[])
+  
+  const handleSort = (e)=>{
+    if(e.target.value==="highToLow"){
+       setData([...data].sort((a,b)=>b.offPrice-a.offPrice))
+    }
+    else if(e.target.value==="lowToHigh"){
+     setData([...data].sort((a,b)=>a.offPrice-b.offPrice))
+    }
+    else if(e.target.value==="no"){
+      setData(data)
+    }
+  }
     return (
       <Container>
             <main>
         <Titlebar>
              <Sort>
                 <Productcount>Products,Stores</Productcount>
-               <SortButton onChange={handleSort}>
+               <SortButton onClick={handleSort}>
                       <option value="no">Sort By Recommended</option>
                       <option value="highToLow">Sort by price(high to low)</option>
                       <option value="lowToHigh">Sort by price(low to high)</option>
@@ -171,7 +182,7 @@ export const ProductbarM=()=>{
              </ItemSort> */}
         </Titlebar>
            <Box>
-            {product.map((e)=>(
+            {filtered.map((e)=>(
           
                <ProductBox  >
                   <ImageDiv>
@@ -191,6 +202,7 @@ export const ProductbarM=()=>{
                </ProductBox>
               
             ))}
+            
            </Box>
            </main>
           
