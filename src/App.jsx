@@ -4,10 +4,10 @@ import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./components/Ho1mePage/HomePage";
 import ProductPage from "./components/ProductPage/ProductPage";
 import Login from "./components/Login/Login";
 import CartPage from "./components/CartPage/CartPage";
+import { Home } from './components/HomePage/HomePage';
 import { Paymentdetails } from "./components/PaymentPage/paymentDetails";
 
 function App() {
