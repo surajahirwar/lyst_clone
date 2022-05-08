@@ -2,7 +2,7 @@ import {useEffect,useState} from "react"
 import { BsHeart } from "react-icons/bs";
 import styledComponents from "styled-components";
 import axios from "axios";
-
+import { useParams } from "react-router-dom";
 
 const Container=styledComponents.div`
     width:100%;
@@ -126,37 +126,43 @@ const Icondiv=styledComponents.div`
 
 
 export const ProductbarW=()=>{
-  const { id } = useParams();
-  const [data, setData] = useState({});
-  //  const [data,setData]=useState();
-  //  const handleSort = (e)=>{
-  //   if(e.target.value==="highToLow"){
-  //      setData([...data].sort((a,b)=>b.offprice-a.offprice))
-  //   }
-  //   else if(e.target.value==="lowToHigh"){
-  //    setData([...data].sort((a,b)=>a.offprice-b.offprice))
-  //   }
-  //   else if(e.target.value==="no"){
-  //     setData(WomensData)
-  //   }
-  // }
+  const {gender}= useParams();
+   const [data,setData]=useState([]);
+   const [filtered,setFiltered]=useState([]);
 
-  useEffect(() => {
-    axios.get(`http://localhost:8080/data/${id}`).then((res) => {
-      setData(res.data);
-    });
-  }, []);
+   useEffect(() => {
+    loadData();
+   
+ }, []);
+ useEffect(()=>{
+  const result = data.filter((obj)=>{
+    return obj.gender==="woman";
+  });
+  setFiltered(result);
+},[])
+console.log(filtered)
 
-
-
-
+     const loadData= async ()=>{
+       return await axios.get(`http://localhost:8080/data`).then((res)=>setData(res.data)).catch((err)=>console.log(err))
+     }
+     const handleSort = (e)=>{
+      if(e.target.value==="highToLow"){
+         setData([...data].sort((a,b)=>b.offPrice-a.offPrice))
+      }
+      else if(e.target.value==="lowToHigh"){
+       setData([...data].sort((a,b)=>a.offPrice-b.offPrice))
+      }
+      else if(e.target.value==="no"){
+        setData(data)
+      }
+    }
     return (
       <Container>
             <main>
         <Titlebar>
              <Sort>
                 <Productcount>{}Products,Stores</Productcount>
-               <SortButton onChange={handleSort}>
+               <SortButton onClick={handleSort} >
                       <option value="no">Sort By Recommended</option>
                       <option  value="highToLow">Sort by price(high to low)</option>
                       <option value="lowToHigh">Sort by price(low to high)</option>
@@ -179,7 +185,7 @@ export const ProductbarW=()=>{
              </ItemSort> */}
         </Titlebar>
            <Box>
-            {data.map((e)=>(
+            {filtered.map((e)=>(
               
                <ProductBox >
                   <ImageDiv>
