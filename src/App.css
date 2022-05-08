@@ -2,9 +2,17 @@
   text-align: center;
 }
 
-/* .flex{
+.flex{
   display: flex;
-} */
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 446px;
+}
+
+.div{
+  margin-left: 80px;
+    text-align: left;
+}
 
 #sizeOption{
   width: 260px;
@@ -16,4 +24,11 @@
 .leftAlign {
   text-align: left;
 }
+
+.code {
+  width: 150px;
+    height: 48px;
+}
+
+
 
