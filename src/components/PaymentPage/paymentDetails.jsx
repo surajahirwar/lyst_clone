@@ -1,7 +1,8 @@
 import  "./paymentDetails.css";
-
+  import { useSelector } from "react-redux";
 export const Paymentdetails = ()=>{
-
+          const Price = useSelector((store)=>store.cart);
+          console.log( "P", Price);
      return(
          <div className="mainbox">
            <div className="leftbox">
@@ -38,7 +39,7 @@ export const Paymentdetails = ()=>{
                     <h2>Total</h2>
                    </div>
                    <div className="right">
-                       <p>₹ 4,545</p>
+                       <p>₹ {Price}</p>
                        <p>₹ 6,87</p>
                        <p>₹ 8,67</p>
                        <p>-₹ 4,87</p>
@@ -49,4 +50,5 @@ export const Paymentdetails = ()=>{
          </div>
      );
 }
+
 

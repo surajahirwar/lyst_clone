@@ -1,5 +1,5 @@
-{
-    "data" : [
+[
+    
         {
             "id": 1,
             "Image" : "https://cdna.lystit.com/200/250/tr/photos/scottsme…o-boss-blue-3-pack-Logo-Short-Sleeve-T-shirt.jpeg",
@@ -401,5 +401,5 @@
             "off" : "20% off",
             "gender": "woman"
         }
+   
     ]
-}
