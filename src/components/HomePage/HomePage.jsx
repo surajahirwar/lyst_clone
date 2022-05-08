@@ -1,6 +1,5 @@
 import React from "react"
 import "./HomePage.css"
- import { Footer } from "../footer/footer"
 export const Home = () => {
     // const data={
     //     image:"https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png"
@@ -11,9 +10,6 @@ export const Home = () => {
             <div class="imgbg" >
           <img className="homeimg" src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt=""/>
            </div>
-      {/* <div id="container1" >
-
-      </div> */}
 
 <div id="container2" >
     <div >
@@ -40,9 +36,19 @@ export const Home = () => {
     <h1 className="head1">ONE STEP AHEAD</h1>
     <img className="imgbox" src="https://cdna.lystit.com/cms/NEW_CLASSICS_f5f19784b9.jpeg" alt=""/>
     </div>
+    <div className="box1">
+     <h1 className="head1" >CHRISP MONOCHROME</h1>
+     <img className="imgbox" src="https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png" alt=""/>
+
+    </div>
+    <div className="box1">
+     <h1 className="head1" >CHRISP MONOCHROME</h1>
+     <img className="imgbox" src="https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png" alt=""/>
+
+    </div>
 </div>
 
-<div className="catog">
+<div className="catog" id="catog">
     <div className="box1">
      <h1 className="head1">ITALIST: SHOP DESIGNER BRANDS AND SAVE UPTO 70%</h1>
      <img className="imgbox" src="https://cdna.lystit.com/cms/JPG_SS_22_RTW_TOP_THE_ATTICO_PANTS_DOLCE_and_GABBANA_BAG_PRADA_WOMAN_1_8a2611b9e1.jpg" alt=""/>
@@ -60,21 +66,38 @@ export const Home = () => {
     <h1 className="head1">THE MULBERRY SOFTIE- A BAG MADE TO SQUIZEED</h1>
     <img className="imgbox" src="https://cdna.lystit.com/cms/Screenshot_2022_03_08_at_14_40_26_4809776918.png" alt=""/>
     </div>
+    <div className="box1">
+     <h1 className="head1" >CHRISP MONOCHROME</h1>
+     <img className="imgbox" src="https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png" alt=""/>
+
+    </div>
+     <div className="box1">
+     <h1 className="head1" >CHRISP MONOCHROME</h1>
+     <img className="imgbox" src="https://cdna.lystit.com/cms/Image_from_i_OS_570_8c4ba5ce61.png" alt=""/>
+
+    </div>
+
 </div>
 
-<div id="offzone">
+<div id="offzone" className="offzone">
     <div id="off_div">
         <div className="head3" id="bg_col"><h1 className="head3_h1">BREAKOUT <br></br>BRANDS</h1></div>
         <div className="head3"><h1 className="head3_h12">PATAO</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg" alt=""/></div>
         <div className="head3"><h1 className="head3_h12">GUCCI</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg" alt=""/></div>
         <div className="head3"><h1 className="head3_h12">SAINT LAURENT</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg" alt=""/></div>
     </div>
+    </div>
+    
+<div id="offzone">
     <div id="off_div"><div className="head3"><h1 className="head3_h12">BALENCIAGA EARRINGS</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/balenciaga_earrings_28c5ac2ab9.jpeg" alt=""/></div>
     <div className="head3"><h1 className="head3_h12">SIMONE ROCHA EARRINGS</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/simone_rocha_earrings_d997cb6315.jpeg" alt=""/></div>
         <div className="head3" id="bg_col"><h1 className="head3_h1">TRENDING  <br></br>NOW</h1></div>
         <div className="head3"><h1 className="head3_h12">OFF-WHITE  SANDALS</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/mens_off_white_co_virgil_abloh_sandals_5c477cbb4a.jpeg" alt=""/></div>
         </div>
-    <div id="off_div">
+        </div>
+       
+<div id="offzone"> 
+    <div className="off_div" id="off_div">
     <div className="head3"><h1 className="head3_h12">BALENCIAGA T-SHIRTS</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_category_mens_balenciaga_t_shirts_2c33757129.jpeg" alt=""/></div>
        <div className="head3" id="bg_col"><h1 className="head3_h1">HOT RIGHT <br></br>NOW</h1></div>
        <div className="head3"><h1 className="head3_h12">CANALI COATS</h1>  <img className="imgbox2" src="https://cdna.lystit.com/cms/designer_category_mens_canali_coats_fcd56d8791.jpeg" alt=""/></div>
@@ -108,7 +131,7 @@ Lyst members are notified when an item goes on sale.</h6>
     </div>
   </div>
     <div id="signupdiv">
-    <h3 id="h3el">SIGN UP FOR<br></br>   BETTER<br></br> SHOPPING</h3>
+    <h3 className="h3el" id="h3el">SIGN UP FOR<br></br>   BETTER<br></br> SHOPPING</h3>
     <button id="btn" type="submit"> signup </button>
     </div>
     
