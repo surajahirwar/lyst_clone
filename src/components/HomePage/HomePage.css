@@ -9,6 +9,7 @@ body {
     margin-bottom: 70px;
     position: relative;
     border-bottom: 1px solid black;
+    z-index: -1;
 }
 
 
