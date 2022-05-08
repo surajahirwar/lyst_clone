@@ -4,6 +4,13 @@ export const Cart = styled.div`
   padding: 10px 100px;
 `;
 
+export const Input = styled.input`
+  width: 300px;
+  height: 35px;
+  font-size: 16px;
+  padding: 5px 10px;
+`;
+
 export const ContactDiv = styled.div`
   display: flex;
   justify-content: center;
@@ -14,8 +21,25 @@ export const ContactDiv = styled.div`
     margin: 0px 10px;
   }
 `;
-export const ProdDiv = styled.div`
-  /* display: flex; */
+
+export const Checkout = styled.div`
+  margin-left: 80%;
+
+  div {
+    display: flex;
+  }
+
+  h4 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+
+  button {
+    width: fit-content;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+  }
 `;
 
 export const Item = styled.div`
@@ -35,18 +59,34 @@ export const Item = styled.div`
   }
 `;
 
+export const ItemDiv = styled.div`
+  display: flex;
+`;
+
+export const Price = styled.div`
+  display: flex;
+
+  p {
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+`;
+
 export const NavDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 50px;
 
   button {
     width: fit-content;
     height: 40px;
     padding: 10px 20px;
+    /* margin-top: 2px; */
   }
 `;
 
 export const Div = styled.div`
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
 `;

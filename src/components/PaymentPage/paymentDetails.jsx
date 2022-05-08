@@ -1,29 +1,38 @@
 import  "./paymentDetails.css";
   import { useSelector } from "react-redux";
 export const Paymentdetails = ()=>{
-        //  const Price = useSelector((e)=>e.price);
+          const Price = useSelector((store)=>store.cart);
+          console.log( "P", Price);
+            var sum=0;
+          for(let i=0; i<Price.length; i++){
+             sum  += Price[i].price;
+          }
+          var ship = 687;
+          var tax = 200;
+          var discount = (sum*10)/100;
+          var Total = sum + ship + tax - discount; 
      return(
          <div className="mainbox">
            <div className="leftbox">
-            <h2>Secure Checkout</h2> 
-            <h5>Already have a Borderfree account?<span> Click<a href=""> here.</a> ?</span></h5>   
+            <h2 className="H">Secure Checkout</h2> 
+            <h5 className="H">Already have a Borderfree account?<span> Click<a href=""> here.</a> ?</span></h5><br />   
             <hr />
-            <h3>2. Payment</h3> 
-          <form action="">
-                <input type="radio"  name="fav_language"  value="Creadit Cart"/>
+            <h3 className="H">2. Payment</h3> 
+            <form >
+               <input  className="H" type="radio"  name="fav_language"  value="Creadit Cart"/>
                 <label for="Credit Cart">Credit Card</label>
-               <input type="radio"  name="fav_language" value="PayPal"/>
+               <input className="H" type="radio"  name="fav_language" value="PayPal"/>
                <label for="PayPal">PayPal</label>
-               <input type="radio"  name="fav_language" value="Debit Cart"/>
-               <label for="Debit Cart">Debit Cart</label><br /><br />
+               <input className="H" type="radio"  name="fav_language" value="Debit Cart"/>
+               <label for="Debit Cart">Debit Cart</label><br /><br />  
               <input id="email" type="text" placeholder="Name on Card" /><br/><br />
               <input id="address" type="number" placeholder="Credit Card Number" /><br /><br />
               <input id="first" type="text" placeholder="Expiry Date" />
               <input id="last" type="number"placeholder="CVV" /><br/><br />
-              <input type="checkbox" name="chechout" value=""/>
+              <input id="checkbox" type="checkbox" name="chechout" value=""/>
               <label htmlFor="checkout">Save credit card</label><br /><br />
 
-          </form>
+            </form>
           <p id="btn">SAVE & CONTINUE </p> 
           </div> 
           <div className="rightbox">
@@ -38,15 +47,16 @@ export const Paymentdetails = ()=>{
                     <h2>Total</h2>
                    </div>
                    <div className="right">
-                       <p>₹ 4,545</p>
-                       <p>₹ 6,87</p>
-                       <p>₹ 8,67</p>
-                       <p>-₹ 4,87</p>
-                       <h3>₹5,887</h3>
+                       <p>₹ {sum}</p>
+                       <p>₹ {ship}</p>
+                       <p>₹ {tax}</p>
+                       <p>-₹ {discount}</p>
+                       <h3>₹ {Total}</h3>
                    </div>
                </div>
           </div>
          </div>
      );
 }
+
 
