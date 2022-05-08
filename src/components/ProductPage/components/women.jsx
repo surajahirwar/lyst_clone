@@ -1,6 +1,7 @@
 import styledComponents from "styled-components";
 import { Sidebar } from "./sidebar";
 import { ProductbarW } from "./productbarwomen";
+import { Footer } from "../../footer/footer";
 
 const Container = styledComponents.div`
   margin:auto;
@@ -50,6 +51,7 @@ export const Women = () => {
           <ProductbarW />
         </Right>
       </Box>
+      <Footer />
     </Container>
   );
 };
