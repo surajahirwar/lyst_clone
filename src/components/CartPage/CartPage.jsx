@@ -1,13 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { deleteCart } from "../../Redux/Cart/cartAction";
 import {
   Cart,
+  Checkout,
   ContactDiv,
   Div,
+  Input,
   Item,
+  ItemDiv,
   NavDiv,
-  ProdDiv,
 } from "../../Style/CartPage/CartPage";
+import { Price } from "../ProductPage/components/dropdown";
 
 export default function CartPage() {
   const store = useSelector((store) => store.cart);
@@ -22,8 +26,19 @@ export default function CartPage() {
     <Cart>
       <div>
         <h2>YOUR SHOPPING BAG </h2>
+        <Checkout>
+          <Link to="/payment">
+            <button>PROCEED TO CHECKOUT</button>
+          </Link>
+          <div>
+            <h4>Price</h4>
+            <h4>Quantity</h4>
+            <h4>Subtotal</h4>
+          </div>
+        </Checkout>
+        <hr />
       </div>
-      <ProdDiv>
+      <ItemDiv>
         {store.map((e) => {
           return (
             <>
@@ -40,18 +55,25 @@ export default function CartPage() {
             </>
           );
         })}
-      </ProdDiv>
-      <p>YOUR CURRENT PROMOTIONS</p>
-      <p>Free Shipping</p>
+
+        {/* <Price>
+          <p>Price</p>
+          <p>Quantity</p>
+          <p>Subtotal</p>
+        </Price> */}
+      </ItemDiv>
+      <p className="leftAlign">YOUR CURRENT PROMOTIONS</p>
+      <p className="leftAlign">Free Shipping</p>
+      <hr />
       <Div>
-        <hr />
         <div>
-          <input
+          <Input
             type="text"
             placeholder="Gift Card/ Store Credit/ Promo Code"
           />
           <button>USE CODE</button>
         </div>
+
         <div>
           <p>Subtotal: </p>
           <h5>Grand Total: </h5>
@@ -60,7 +82,9 @@ export default function CartPage() {
       </Div>
       <NavDiv>
         <button>CONTINUE SHOPPING</button>
-        <button>PROCEED TO CHECKOUT</button>
+        <Link to="/payment">
+          <button>PROCEED TO CHECKOUT</button>
+        </Link>
       </NavDiv>
       <hr />
       <div>
