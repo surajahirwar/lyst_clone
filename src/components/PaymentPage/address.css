@@ -9,17 +9,20 @@
 .leftbox{
    width: 65%;
 }
+#H{
+   text-align: left;
+}
 #email{
    width: 99%;
    height: 35px;
 }
 #first{
-    width: 37%;
+    width: 46%;
     height: 35px;
     margin-right: 29.5px;
 }
 #last{
-    width: 37%;
+    width: 47%;
     height: 35px;
 }
 #address{
@@ -27,30 +30,30 @@
  height: 35px;
 }
 #address2{
- width: 44%;
+ width: 47%;
  height: 35px;
  margin-right: 29.5px;
 }
  #postalcode{
- width: 37%;
+ width: 46%;
  height: 35px;
  } 
  #city{
-     width: 37%;
+     width: 47%;
      height: 35px;
      margin-right: 29.5px;
   }
      #region{
-     width: 37%;
+     width: 46%;
      height: 35px;
      } 
      #phone{
-         width: 37%;
+         width: 47%;
          height: 35px;
          margin-right: 29.5px;
         }
          #location{
-         width: 37%;
+         width: 46%;
          height: 35px;
          } 
        #btn{

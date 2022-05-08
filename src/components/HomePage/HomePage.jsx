@@ -164,10 +164,10 @@ Lyst members are notified when an item goes on sale.</h6>
 <div className="menus2">
     <h1 className="head2">WOMEN'S CLOTHING</h1>
     <div className="menu-div2">
-       <Link className="Link_remove" to="mens"> <h5>Night Ware</h5></Link>
-       <Link className="Link_remove" to="mens"> <h5>Jackets</h5></Link>
-       <Link className="Link_remove" to="mens"><h5>Skirts</h5></Link>
-       <Link className="Link_remove" to="mens"> <h5>Skirts</h5></Link>
+       <Link to="men"> <h5>Night Ware</h5></Link>
+       <Link to="men"> <h5>Jackets</h5></Link>
+       <Link to="men"><h5>Skirts</h5></Link>
+       <Link to="men"> <h5>Skirts</h5></Link>
         <h5>Shoes</h5>
         <h5>Knitwear</h5>
         <h5>Pants</h5>
@@ -232,5 +232,4 @@ Lyst members are notified when an item goes on sale.</h6>
 
     )
 }
-
 

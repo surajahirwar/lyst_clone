@@ -16,10 +16,10 @@ export const Address = ()=>{
      return(
          <div className="mainbox">
            <div className="leftbox">
-            <h2>Secure Checkout</h2> 
-            <h5>Already have a Borderfree account?<span> Click<a href=""> here.</a> ?</span></h5>   
+            <h2 id="H">Secure Checkout</h2> 
+            <h5 id="H">Already have a Borderfree account?<span> Click<a href=""> here.</a> ?</span></h5> <br />   
             <hr />
-            <h3>1. Delivery</h3>
+            <h3 id="H">1. Delivery</h3>
           <form action="">
               <input id="email" type="text" placeholder="Email" /><br/><br />
               <input id="first" type="text" placeholder="First Name" />
@@ -38,7 +38,9 @@ export const Address = ()=>{
           </div> 
           <div className="rightbox">
               <h2>Your Order</h2>
+               <Link to="/payment">
                <p id="button">Continue</p>
+               </Link>
                <div id="cart">
                    <div className="left">
                     <p>Items</p>
